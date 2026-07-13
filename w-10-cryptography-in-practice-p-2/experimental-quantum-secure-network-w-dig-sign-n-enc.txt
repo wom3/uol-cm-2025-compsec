@@ -1,0 +1,27 @@
+Prepare a 300–400 word written response addressing the following points.
+
+1. Describe how Yin et al. (2023) combined digital signatures and encryption in their quantum network to ensure secure transmission.
+
+2. Explain how this design might mitigate risks from MITM and brute force attacks.
+
+3. Propose one potential vulnerability that this system might still face (e.g. side channels, implementation flaws) and suggest how you might address it.
+
+Yin et al. (2023) present a quantum secure network that combines quantum digital signatures (QDS)with one-time pad (OTP) encryption to provide confidentiality, integrity, authenticity, and non-repudiation within a single framework. Rather than signing a document directly, the sender (Alice) first generates a digest using a one-time universal hash function (OTUH). This digest is then encrypted using an OTP, producing a digital signature that is transmitted alongside the document. During verification, the recipient and verifier reconstruct the necessary keys through a quantum secret-sharing mechanism and confirm that the decrypted digest matches the hash of the received document. Because the hash function and digest are protected by OTP encryption, an attacker cannot learn useful information about the signing process, while any modification of the document will be detected during verification.
+
+This design helps mitigate both man-in-the-middle (MITM) and brute-force attacks. In a MITM attack, an adversary attempts to intercept and alter communications between legitimate parties. However, any change to a signed document results in a mismatch between the received and expected digests, causing the signature verification process to fail. Additionally, the secret-sharing architecture distributes key material across multiple parties, preventing an attacker from obtaining all information needed to forge a valid signature. The system is also resistant to brute-force attacks because its security is based on information-theoretic principles rather than computational complexity. Unlike traditional cryptographic systems, increasing computing power does not significantly improve an attacker's chance of guessing the correct key or generating a valid signature.
+
+Despite these strengths, the system may still be vulnerable to implementation-level side-channel attacks. For example, an attacker could analyse timing information, power consumption, or hardware emissions from quantum devices to infer sensitive key material without breaking the underlying cryptographic protocol. Such vulnerabilities have affected many otherwise secure systems in practice. To address this risk, developers should implement side-channel-resistant hardware, deploy continuous monitoring and anomaly detection, and conduct regular penetration testing and security audits. Applying the principle of least privilege and protecting operational logs from exposing sensitive information would further reduce the attack surface and strengthen the overall security of the network.
+
+Feedback
+
+1. System design: how encryption and digital signatures combine
+
+Yin et al. (2023) implemented digital signatures using a quantum digital signature (QDS) protocol that authenticates the sender and verifies message integrity. Keys distributed via quantum key distribution (QKD) apply the encryption, ensuring confidentiality. The integration of QDS and QKD provides end-to-end protection: encryption safeguards data from unauthorised access, while digital signatures ensure the message has not been tampered with and verify the identity of the sender.
+
+2. Attack mitigation: how the design counters brute force and MITM attacks
+
+The use of QKD renders brute force attacks ineffective because quantum randomness generates keys and refreshes them frequently. Moreover, any interception attempt in a QKD system introduces detectable anomalies due to quantum no-cloning and disturbance principles, thereby mitigating MITM attacks. If an attacker tries to eavesdrop or impersonate, the quantum channel reveals inconsistencies, and the connection can be terminated.
+
+3. Residual vulnerability and mitigation
+
+A potential vulnerability is the risk of side-channel attacks, where attackers exploit unintended information leaks (e.g. timing, power consumption) from the hardware implementing QKD or QDS. These aren’t prevented by quantum protocols themselves. To mitigate this, certify devices against known side-channel vectors, and put physical security controls in place to prevent tampering or covert observation.

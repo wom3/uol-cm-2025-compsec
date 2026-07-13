@@ -1,0 +1,217 @@
+Main Topic: Identifying and Classifying Cyber Threats
+
+Sub Topic: Introduction to Cyber Threats
+
+Sub-sub-Topic: Definition of cyber threats
+Cyber threats are actions, events, or conditions that can damage, disrupt, steal, or gain unauthorised access to digital systems, networks, devices, or data. They may come from external attackers, malicious insiders, careless users, or weaknesses in technology and processes.
+
+Sub-sub-Topic: Importance of understanding cyber threats in the digital age
+Modern organisations depend heavily on digital systems for communication, finance, healthcare, education, and public services. Understanding cyber threats helps individuals and organisations protect confidentiality, integrity, and availability, while reducing financial loss, legal exposure, and reputational damage.
+
+Sub-sub-Topic: Threat landscape: every organisation is a potential victim and weak basic security increases exposure
+The NCSC stresses that every organisation has something of value, even if it is not a high-profile target. If an organisation fails to do basic security well, it becomes easier for attackers to compromise systems using common tools and known techniques.
+
+Sub-sub-Topic: Common cyber attacks often target Internet-exposed systems using known weaknesses and commodity tools
+Many attacks do not require advanced capabilities. Attackers often scan the Internet for exposed services, outdated software, weak passwords, or users who can be tricked, then use widely available exploit kits, phishing kits, or malware.
+
+Sub-sub-Topic: Common attack lifecycle: survey, delivery, breach, and affect
+The NCSC infographic describes four broad stages. In the survey stage, attackers gather information about the target. In delivery, they send the malicious content or attempt access. In breach, they exploit a vulnerability or user mistake to get in. In affect, they steal data, disrupt operations, or maintain control for future attacks.
+
+Sub-sub-Topic: Threat actors: cyber criminals, industrial competitors, foreign intelligence services, hackers, hacktivists, and insiders
+Different attackers have different motives. Cyber criminals usually want money, competitors and foreign intelligence services may want economic or strategic advantage, hackers may be motivated by challenge, hacktivists by ideology, and insiders may cause harm deliberately or accidentally.
+
+Sub Topic: Types of Cyber Threats
+
+Sub-sub-Topic: Malware: viruses, worms, trojans, ransomware
+Malware is malicious software designed to damage systems, disrupt operations, or steal information. Viruses attach themselves to files, worms self-replicate across networks, trojans disguise themselves as legitimate software, and ransomware encrypts data or systems until a payment demand is met.
+
+Sub-sub-Topic: Phishing: email scams, spear phishing, whaling
+Phishing tricks users into revealing credentials, financial details, or other sensitive information. Spear phishing targets a specific individual or team using tailored messages, while whaling targets senior staff such as executives who may have access to high-value systems or authority over payments.
+
+Sub-sub-Topic: Denial of Service (DoS) and Distributed Denial of Service (DDoS) attacks
+DoS attacks attempt to overwhelm a system, service, or website so legitimate users cannot access it. DDoS attacks do the same thing using many compromised devices at once, which makes the traffic harder to block and the disruption more severe.
+
+Sub-sub-Topic: Social Engineering: pretexting, baiting, quid pro quo
+Social engineering exploits human behaviour rather than technical flaws. Pretexting involves inventing a convincing story to obtain information, baiting offers something tempting such as a free download or infected USB device, and quid pro quo offers a fake service or benefit in exchange for access or credentials.
+
+Sub-sub-Topic: Supply Chain Attacks: targeting third-party vendors and suppliers
+Supply chain attacks compromise a less secure partner, supplier, or software provider in order to reach the real target. These attacks are dangerous because organisations often trust third-party services, updates, or contractors.
+
+Sub-sub-Topic: Exploitation of unpatched vulnerabilities and weak configurations
+Attackers frequently take advantage of software bugs that already have fixes available but have not been patched. Weak configuration, such as open ports, default settings, unnecessary services, or poor permissions, can also give attackers easy entry points.
+
+Sub-sub-Topic: Malicious downloads, blocked domains, and unauthorised software execution
+Users may be exposed to harmful code through email attachments, compromised websites, or fake software downloads. If organisations do not control what can be downloaded or executed, attackers can install malware, run scripts, or contact malicious domains with little resistance.
+
+Sub-sub-Topic: Credential attacks enabled by weak password policies and excessive user privileges
+Weak passwords are easier to guess, crack, or reuse after data breaches. If users also have more privileges than they need, a single compromised account can give an attacker broad access to systems, sensitive files, and administrative functions.
+
+Sub Topic: Reducing Exposure to Common Cyber Attacks
+
+Sub-sub-Topic: Boundary firewalls and internet gateways: web filtering, proxying, content checking, firewall policy
+Boundary defences help control traffic entering and leaving the organisation. Firewalls, web proxies, filtering, and content checking can block unnecessary services, prevent access to known malicious websites, and reduce the chance of harmful files reaching users.
+
+Sub-sub-Topic: Malware protection: detecting and responding to known malicious code
+Malware protection includes antivirus, endpoint protection, email scanning, and other detection tools. These controls help identify malicious files, quarantine suspicious activity, and stop known attack code before it spreads.
+
+Sub-sub-Topic: Patch management: fixing known vulnerabilities quickly
+Patch management is the process of applying security updates to software, operating systems, and devices. Fast patching reduces the time attackers have to exploit known vulnerabilities and is one of the most effective low-cost security measures.
+
+Sub-sub-Topic: Allow listing and execution control: preventing unknown software and AutoRun-based compromise
+Allow listing means only approved applications or scripts are allowed to run. Execution controls also help disable risky automatic behaviour such as AutoRun from removable media, which reduces the chance of unauthorised code running on a system.
+
+Sub-sub-Topic: Secure configuration: minimising unnecessary services and functionality
+Secure configuration means changing default settings and reducing systems to only the functions required for business use. This includes removing unused software, disabling unnecessary services, changing default passwords, and turning off insecure features.
+
+Sub-sub-Topic: Password policy and user access control: enforcing least privilege and limiting execution rights
+Good password policy encourages strong, hard-to-guess passwords and may include lockout controls after repeated failed login attempts. User access control applies the principle of least privilege so people only have access to the data, applications, and permissions required for their role.
+
+Sub-sub-Topic: Security monitoring: identifying unexpected or suspicious activity
+Monitoring involves collecting and reviewing logs, alerts, and network activity to detect attacks or unusual behaviour early. Effective monitoring improves the chance of spotting compromise before attackers can cause significant damage.
+
+Sub-sub-Topic: User training, education, and awareness: improving staff reporting and phishing resistance
+Users are often targeted because they are easier to manipulate than systems. Training helps staff recognise phishing, suspicious requests, risky online behaviour, and social engineering, while encouraging them to report incidents quickly.
+
+Sub-sub-Topic: Device controls: restricting unauthorised access to critical or inherently insecure internal services
+Internal device controls help ensure that only authorised systems can reach critical internal services. They can also limit access to older or inherently insecure services that may still be required for operational reasons.
+
+Sub-sub-Topic: Security incident management: reducing business impact through planned response
+Incident management means having defined procedures for detecting, reporting, containing, eradicating, and recovering from cyber incidents. A prepared response reduces downtime, limits data loss, and helps organisations restore services more quickly.
+
+Sub-sub-Topic: Real World Examples of Cyber Threats
+Real incidents help show how cyber threats work in practice and why baseline controls matter. They also demonstrate that attacks can affect healthcare, government, energy, and global business operations.
+
+Sub-sub-Topic: Notable cyber attacks in recent history (e.g., WannaCry, SolarWinds, Colonial Pipeline)
+WannaCry spread rapidly in 2017 by exploiting unpatched Windows systems and caused major disruption, especially in the NHS. The SolarWinds attack compromised software updates to gain access to many organisations through the supply chain. The Colonial Pipeline incident showed how ransomware can disrupt critical national infrastructure and business continuity.
+
+Sub-sub-Topic: NCSC guidance: basic cyber hygiene and Cyber Essentials controls reduce the impact of common attacks
+The NCSC argues that organisations can reduce exposure to many common attacks by implementing fundamental controls rather than relying only on advanced tools. Cyber Essentials and the 10 Steps to Cyber Security provide practical guidance for building this baseline and improving resilience.
+ 
+
+Main Topic: Classifying Cyber Threats
+
+Sub Topic: Threat Origins
+
+Sub-sub-Topic: Insider threats
+An insider threat comes from within the organisation and involves someone who already has legitimate access to systems, devices, or data. This could be a current employee, former employee, contractor, or trusted third-party partner.
+
+Sub-sub-Topic: Types of insider threat: malicious and negligent
+Malicious insiders act deliberately, often for revenge, personal gain, espionage, or sabotage. Negligent insiders cause harm accidentally, for example by losing a device, mishandling data, or falling for a phishing email that gives attackers access.
+
+Sub-sub-Topic: Insider threat example: Tesla 2020
+The 2020 Tesla incident showed how an insider could be used to introduce malware into an organisation. Although the employee reported the approach, the case highlights how valuable internal access can be to attackers.
+
+Sub-sub-Topic: External threats
+External threats come from outside the organisation and are carried out by actors who do not already have authorised internal access. Common examples include cybercriminals, ransomware gangs, hacktivists, state-sponsored actors, and organised hacker groups.
+
+Sub-sub-Topic: External threat example: WannaCry and the NHS
+The 2017 WannaCry attack on the NHS is a clear example of an external threat with severe consequences. It spread through vulnerable systems, disrupted healthcare services, and affected appointments and operational continuity across the UK.
+
+Sub Topic: Attack Vectors
+
+Sub-sub-Topic: Network-based threats
+Network-based threats target infrastructure such as servers, routers, gateways, and cloud services. They exploit weaknesses in how systems communicate across networks rather than relying on direct physical access to a user device.
+
+Sub-sub-Topic: Examples of network-based threats
+Common examples include DDoS attacks, which flood servers with traffic and make services unavailable; man-in-the-middle attacks, where communications are secretly intercepted; and port scanning, which is used to identify exposed or vulnerable services.
+
+Sub-sub-Topic: Endpoint threats
+Endpoint threats target the devices people use directly, such as laptops, desktops, tablets, and smartphones. These attacks often arrive through email, web browsing, malicious downloads, or infected removable media.
+
+Sub-sub-Topic: Examples of endpoint threats
+Examples include phishing emails that steal passwords, keyloggers that record keystrokes to capture credentials, and ransomware files that encrypt data on a user device. Even when they start on one device, endpoint attacks can become the first step in a larger compromise.
+
+Sub Topic: Threat Impact
+
+Sub-sub-Topic: Financial impact
+Cyber threats can cause immediate and long-term financial losses. Organisations may face ransom payments, incident response costs, legal fees, regulatory penalties, lost revenue from downtime, and the expense of rebuilding affected systems.
+
+Sub-sub-Topic: Financial impact example: Colonial Pipeline 2021
+The Colonial Pipeline ransomware attack showed how expensive cyber incidents can be. The company reportedly paid a ransom of nearly $3.5 million, and the wider costs of disruption, recovery, and operational interruption made the overall impact much greater.
+
+Sub-sub-Topic: Reputational impact
+Reputational impact happens when customers, partners, or the public lose trust in an organisation after a breach or service failure. This damage may last longer than the technical incident itself and can affect customer confidence, investor trust, and brand value.
+
+Sub-sub-Topic: Reputational impact example: Sony Pictures 2014
+The Sony Pictures hack caused reputational damage by exposing confidential emails, sensitive information, and unreleased films. Beyond the immediate disruption, the organisation faced public embarrassment, legal issues, and long-term brand harm.
+
+Sub Topic: Using Classification to Understand Risk
+
+Sub-sub-Topic: Simple classification model
+Cyber threats can be classified by origin, vector, and impact. A threat may be insider or external, network-based or endpoint-based, and financially damaging, operationally disruptive, or reputationally harmful.
+
+Sub-sub-Topic: Why classification matters
+This classification model helps organisations understand risk more clearly and choose suitable defences. By identifying who is behind a threat, how it operates, and what damage it causes, security teams can prioritise controls, training, monitoring, and response planning.
+
+
+Main Topic: Comprehensive Review of Cyber-Attacks and Cybersecurity
+
+Sub Topic: Scope and Importance of Cyberspace
+
+Sub-sub-Topic: Dependence on cyberspace
+The paper explains that modern economic, social, governmental, and cultural activity is now deeply dependent on cyberspace. Because communication, finance, infrastructure, and information exchange rely on digital systems, cyber insecurity can directly affect everyday life and national stability.
+
+Sub-sub-Topic: Why cyber-attacks matter
+Cyber-attacks can cause financial loss, political disruption, espionage, service outages, and harm to public safety. The paper argues that cyber threats are now a major challenge because societies depend heavily on interconnected systems and sensitive digital infrastructure.
+
+Sub-sub-Topic: Key characteristics of cyberspace
+Cyberspace is described as low-cost to enter, difficult to attribute, globally connected, fast-changing, and highly asymmetric. These characteristics allow both strong and weak actors to cause disruption, making cyber threats different from traditional physical threats.
+
+Sub Topic: Fundamental Concepts and Definitions
+
+Sub-sub-Topic: Definition of cyber threats
+The paper defines cyber threats as events that can harm missions, systems, assets, or people through unauthorised access, disruption, destruction, disclosure, or alteration of information and services.
+
+Sub-sub-Topic: Definition of cyber-attack
+A cyber-attack is presented as an unauthorised cyber act intended to violate security policy and cause damage, disruption, or loss of access to information or services. The review notes that experts disagree on the exact definition, especially when distinguishing cyber-attack from cybercrime and cyberwarfare.
+
+Sub-sub-Topic: Cybercrime, cyber-attack, and cyberwarfare
+The paper separates these concepts by purpose and effect. Cybercrime is generally linked to unlawful acts by non-government actors, cyber-attacks aim to disrupt or damage systems, and cyberwarfare refers to the most serious attacks with strategic, political, or armed-conflict implications.
+
+Sub-sub-Topic: CIA triad
+The review highlights confidentiality, integrity, and availability as the three core principles of information security. Confidentiality protects access to data, integrity protects accuracy and authorised change, and availability ensures that systems and services remain accessible when needed.
+
+Sub Topic: Sources and Types of Cyber Threats
+
+Sub-sub-Topic: Main sources of cyber threats
+The paper identifies foreign actors, insiders, supply chain risks, criminal groups, hacktivists, terrorists, and weak local operational capability as major sources of cyber threats. Each source differs in motivation, access, and scale of potential harm.
+
+Sub-sub-Topic: Common cyber-attack methods
+Important attack methods listed in the paper include denial of service, distributed denial of service, logic bombs, sniffers, trojans, viruses, worms, spam, botnets, phishing, and malware. These methods can target systems directly or create entry points for wider compromise.
+
+Sub-sub-Topic: Risks from insider and supply chain exposure
+The review stresses that threats do not come only from outside attackers. Dissatisfied insiders, weak suppliers, and insecure third-party products can all create serious vulnerabilities because they already have trust relationships or system access.
+
+Sub Topic: Cybersecurity Approaches and Controls
+
+Sub-sub-Topic: Major areas of cybersecurity
+The paper groups cybersecurity into network security, application security, information security, operational security, cloud security, and user training. Together, these areas protect infrastructure, software, data, processes, cloud platforms, and human behaviour.
+
+Sub-sub-Topic: Role of user awareness and training
+User training is treated as essential because many incidents begin with human error. Staff need to recognise suspicious emails, unsafe attachments, unknown USB devices, and other common attack routes that can bypass technical controls.
+
+Sub-sub-Topic: Need for layered protection
+The review suggests that no single defence is enough. Effective cybersecurity requires technical controls, operational processes, access management, monitoring, policy, and ongoing awareness so that organisations can reduce both internal and external risks.
+
+Sub Topic: Cybersecurity Policy and Governance
+
+Sub-sub-Topic: Purpose of cybersecurity policy
+Cybersecurity policy provides rules, responsibilities, and standards for protecting systems and information. It helps guide how organisations and governments manage risk, regulate behaviour, and align security practices with wider goals.
+
+Sub-sub-Topic: National and organisational policy differences
+The paper explains that national cybersecurity policy and company policy are different in scope and purpose. National policy is tied to public regulation and national security, while organisational policy is focused on internal controls, staff behaviour, and operational compliance.
+
+Sub-sub-Topic: Governance challenges
+One challenge is that managers responsible for business performance may not always make good security decisions. The paper notes that cybersecurity policy becomes more effective when responsibilities are clear, enforcement exists, and leadership treats security as a strategic issue rather than a purely technical one.
+
+Sub Topic: Overall Conclusions from the Review
+
+Sub-sub-Topic: Cyber threats are multidimensional
+The paper concludes that cyber threats are complex, fast-changing, and difficult to contain with traditional methods alone. They can affect governments, companies, and individuals at the same time and often cross legal, technical, and political boundaries.
+
+Sub-sub-Topic: Cooperation is essential
+The review argues that governments alone cannot manage cyber threats effectively. Public-private cooperation, stronger definitions, better policy, and continued research are all needed to improve resilience and respond to emerging forms of attack.
+
+Sub-sub-Topic: Cybersecurity as an evolving field
+Cybersecurity is presented as a continuously developing field that must adapt to new technologies, new forms of attack, and changing social and economic dependence on digital systems. This makes ongoing study, monitoring, and policy development essential.
+

@@ -1,0 +1,37 @@
+Question 1
+Your browser uses cryptographic algorithms every time you connect to secure websites but what exactly is being used? In this task, you will investigate which cryptographic algorithms your browser uses when connecting to a major secure website like Google and reflect on what this means for digital security.
+1. Conduct a cryptographic inspection
+	•	Open a secure browser (e.g. Chrome, Firefox, Safari).
+	•	Navigate to https://www.google.com
+	•	Open the security or padlock information (click the padlock icon in the address bar).
+	•	Locate the certificate or connection details, and identify:
+	◦	the protocol used (e.g. TLS 1.3)
+	◦	the key exchange algorithm
+	◦	the encryption cipher suite (e.g. AES_128_GCM, ECDHE_RSA)
+	◦	the digital signature algorithm used in the certificate.
+(Optional: use browser developer tools or services like SSL Labs' SSL Test for a deeper inspection.)
+2. Write 300–350 words answering the following questions.
+	•	What algorithms are involved in securing the Google connection?
+	•	How do they relate to what you’ve learned about symmetric and asymmetric cryptography?
+	•	Why is it important for browsers to use modern protocols like TLS 1.3?
+	•	What might happen if these cryptographic systems were outdated or misconfigured?
+
+Feedback
+Task 1: Cryptographic inspection
+Example inspection results (Chrome or Firefox):
+• Protocol used: TLS 
+• Key exchange algorithm: ECDHE (Elliptic Curve Diffie-Hellman Ephemeral)
+• Encryption cipher suite: TLS_AES_128_GCM_SHA256
+• Digital certificate signature algorithm: RSA or ECDSA, typically with SHA-256.
+
+Note: values may differ slightly depending on the browser, OS or region. 
+
+Task 2: Reflection
+
+When connecting to Google via a modern browser, several cryptographic algorithms work together to ensure the confidentiality, integrity and authenticity of the session. In this case, the TLS 1.3 protocol was used, which is the latest version of the Transport Layer Security standard. TLS provides the secure channel for data exchange.
+ECDHE (Elliptic Curve Diffie-Hellman Ephemeral) was used for key exchange. This is an asymmetric cryptographic method that allows both parties to establish a shared secret over an insecure channel. The ’ephemeral’ part ensures that a new key is used for each session – a property called ‘forward secrecy’.
+
+The data itself was encrypted using AES_128_GCM, a symmetric encryption algorithm. AES is widely used for its efficiency and security, and the GCM (Galois/Counter Mode) variant provides both encryption and message authentication. This means the same key encrypts and decrypts the data quickly, while also detecting tampering.
+Finally, the website's certificate was signed using RSA with SHA-256, or in some cases ECDSA. This is another use of asymmetric cryptography, used here to verify that Google's certificate was issued by a trusted authority and hasn’t been altered.
+Using modern protocols like TLS 1.3 is crucial because they remove outdated features (like RSA key exchange and insecure ciphers) and improve performance and security. If a browser used older protocols (e.g. TLS 1.0), it would be more vulnerable to attacks such as downgrade attacks, weak cipher cracking or man-in-the-middle attacks.
+Overall, this exercise shows   how multiple cryptographic systems — both symmetric and asymmetric — work in tandem to keep everyday web use secure. Misconfigured or outdated components could expose users to interception, spoofing or data theft.  

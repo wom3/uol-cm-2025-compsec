@@ -1,0 +1,9 @@
+In June 2024, CDK Global, a software provider used by thousands of car dealerships in the United States, was hit by a major cyber attack. According to Reuters, the incident disrupted dealership operations across the country because CDK’s systems support core business activities such as sales processing and transactions. As a result, many dealerships had to switch to manual processes while systems were unavailable.
+
+The main threat involved was ransomware, specifically a BlackSuit-linked attack. It can also be classified as a supply chain attack because the attackers targeted a behind-the-scenes technology supplier in order to disrupt many downstream businesses at once. This was primarily a technical threat rather than a social one, although ransomware groups often combine technical intrusion with extortion pressure.
+
+The impact was significant. Operationally, dealerships experienced delays and disruption to normal sales activity. Financially, outages likely increased costs and reduced revenue while manual workarounds were used. Reputationally, the incident damaged confidence in a critical supplier and highlighted how dependent businesses are on third-party platforms.
+
+My initial classification is: external source, primarily technical nature, and high operational and financial impact, with additional reputational consequences. This case shows how ransomware and supply chain compromise can spread disruption far beyond the original target.
+
+Source: https://www.reuters.com/technology/cybersecurity/blacksuit-hacker-behind-cdk-global-attack-hitting-us-car-dealers-2024-06-27/

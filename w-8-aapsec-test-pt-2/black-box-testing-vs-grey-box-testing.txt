@@ -1,0 +1,33 @@
+Black box versus grey box testing
+
+Imagine a mid-sized e-commerce company preparing to launch a new online platform for handling customer orders and payments. The system will store sensitive data such as payment details, addresses and account credentials. The company’s security team needs to test the application before launch to identify potential vulnerabilities.
+There are two options available.
+
+1. Black-box testing, which simulates an external attacker with no knowledge of the system’s internals.
+2. Grey-box testing, where testers have partial knowledge of the application’s design and code.
+
+Task (200–300 words)
+
+• Which approach would you recommend in this scenario, and why?
+• What kinds of issues might black-box testing be better at uncovering than grey-box testing, and vice versa?
+• If you were leading the security team, how might you combine both approaches to create a stronger overall testing strategy before launch?
+
+Testing approach recommendation
+
+For a mid‑sized e‑commerce platform handling payments and PII, I recommend a combined strategy that prioritizes grey‑box testing early and adds comprehensive black‑box testing closer to launch. 
+
+Grey‑box testing (partial internal knowledge) lets testers validate authentication flows, access controls, and business logic with targeted, code‑aware test cases; it’s efficient at finding logic flaws, misconfigurations, and insecure use of libraries. 
+
+Black‑box testing simulates an external attacker and is better at uncovering runtime issues such as authentication bypasses, insecure endpoints, input validation gaps, and environment‑specific misconfigurations that only appear in a deployed system.
+
+Black‑box DAST treats the application as an external system with no insider knowledge, which mirrors how most attackers interact: sending requests, probing inputs, and observing responses at runtime.
+
+Practical plan:
+
+Phase 1 (pre‑staging): Run grey‑box tests focused on critical paths (payment processing, session management, role enforcement). Use code review and SAST to catch insecure patterns early.
+
+Phase 2 (staging): Execute authenticated and unauthenticated black‑box scans (DAST), targeted penetration tests, and business‑logic abuse cases against a production‑like environment.
+
+Phase 3 (pre‑launch): Reconcile findings, prioritize fixes by risk, and run a final black‑box sweep plus regression tests.
+
+Why this mix works: grey‑box reduces noisy, low‑value findings and speeds remediation; black‑box validates the real‑world attack surface and uncovers issues that only appear at runtime. Combining both yields deeper coverage, faster fixes, and stronger assurance before launch.

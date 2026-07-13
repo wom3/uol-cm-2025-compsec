@@ -1,0 +1,114 @@
+
+Question 1
+
+Task overview
+
+Debugging and logging are essential for troubleshooting and monitoring software. However, if done insecurely, they can expose sensitive data and create vulnerabilities. In this task, you'll identify and correct insecure logging practices and reflect on secure design principles.
+
+Task
+
+1.	Security audit: log review
+
+Review the following pseudocode log lines. For each one, identify the insecure logging practice and briefly explain the associated risk. 
+ 
+logger.debug(f"User {username} tried password: {password}")
+
+logger.info(f"User {email} logged in from IP: {ip_address}")
+
+logger.error(f"Card verification failed for card number: {card_number}")
+
+2.	Secure logging rewrite
+
+Rewrite the log lines above to follow secure logging best practices.
+
+Note down how you:
+	•	avoided exposing personal or sensitive information
+	•	retained useful debugging or auditing information
+	•	included contextual data helpful for security monitoring.
+
+3.	Reflection
+Write 250–300 words on:
+	•	what principles guide secure logging in production systems
+	•	what trade-offs exist between debugging detail and user data protection
+	•	how attackers could exploit insecure logs.
+
+
+logger.debug(f"User {username} tried password: {password}")
+
+Insecure practice: logging plaintext passwords.
+Risk: Exposes credentials to anyone with log access; enables account takeover if logs are leaked or compromised; violates compliance and privacy requirements.
+
+logger.info(f"User {email} logged in from IP: {ip_address}")
+
+Insecure practice: Logging full email addresses and raw IPs without context and minimization.
+Risk: Email addresses are PII; combined with IPs they enable user tracking. combined with IPs they enable user tracking, targeted attacks or privacy violations. Logs may be retained longer than necessary, increasing exposure.
+
+logger.error(f"Card verification failed for card number: {card_number}")
+Insecure practice: Logging full payment card numbers (sensitive financial data)
+Risk: Violates PCI-DSS; exposes cardholder data that attackers can use for fraud; increases legal and financial liability.
+
+Secure logging rewrite
+
+logger.debug("auth.password_attempt", extra={
+"user_id": user_id_hash,
+"event": "password_attempt",
+"result": "failed",
+"request_id": request_id,
+"client_ip": ip_address_masked
+})
+
+logger.info("auth.login", extra={
+"user_id": user_id_hash,
+"event": "login_success",
+"client_ip": ip_address_masked,
+"request_id": request_id,
+"geo": {"country": country_code}
+})
+
+logger.error("payment.card_verification", extra={
+"transaction_id": txn_id,
+"card_last4": card_number[-4:],
+"result": "verification_failed",
+"request_id": request_id,
+"reason_code": verification_error_code
+})
+
+How this design meets goals
+
+• Avoided exposing sensitive information: No plaintext passwords, no full emails, no full card numbers; use hashed user IDs, last4 for cards, and masked IPs.
+• Retained useful debugging/auditing info: Kept event type, result, request/transaction IDs, last4, and error codes so engineers can trace and reproduce issues without secrets.
+• Included contextual data for security monitoring: Added request_id, masked client_ip, and geo to support correlation, alerting, and incident investigation while minimizing PII exposure.
+
+Reflection on secure logging principles
+
+Guiding principles: Log only what is necessary for the intended purpose (debugging, audit, security), minimize sensitive data, and structure logs for machine parsing. Protect logs with access controls, encryption at rest and in transit, and retention policies that meet regulatory requirements. Use consistent event names, correlation IDs, and standardized fields so SIEMs and incident response teams can reliably detect anomalies. Sampling and rate-limiting reduce noise and cost while preserving signal.
+Trade-offs between detail and privacy: More detail speeds debugging and forensic analysis but increases risk if logs leak. Minimization (masking, hashing, last‑4) reduces risk but can make root‑cause analysis harder and may require additional instrumentation (traces, metrics) to compensate. Teams must balance operational needs against legal and privacy obligations, using layered telemetry (logs + traces + metrics) so sensitive data need not be logged.
+How attackers exploit insecure logs: Logs containing credentials, full identifiers, or payment data become a high‑value target; attackers who gain access can perform account takeover, financial fraud, or targeted phishing. Even metadata (email + IP) can be combined to deanonymize users or pivot into other systems. Poorly protected logs also enable lateral movement inside networks and extend the blast radius of breaches. Robust log hygiene and least‑privilege access are essential defenses.
+
+
+
+Feedback
+Task 1: Security audit – log review
+
+1. This log line exposes plaintext passwords:
+logger.debug(f"User {username} tried password: {password}")
+Risk: internal actors may access logs or breaches many expose logs. Storing passwords in logs – even temporarily – violates basic security hygiene and may aid brute-force or credential stuffing attacks.
+2. This log line logs sensitive user identifiers and location data:
+logger.info(f"User {email} logged in from IP: {ip_address}")
+Risk: email addresses and IPs are personally identifiable information (PII). If logs are accessed or forwarded to external systems without obfuscation, this can violate privacy policies and data protection regulations (e.g. GDPR).
+3. This log line logs full card numbers (PANs):
+logger.error(f"Card verification failed for card number: {card_number}")
+Risk: This violates PCI-DSS standards. Logging full card numbers is a serious compliance issue and could result in financial penalties, reputational damage and regulatory action.
+Task 2: Secure logging rewrite
+logger.debug("Authentication attempt failed for user ID: %s", user_id)
+logger.info("Successful login detected from IP: %s (User ID: %s)", masked_ip(ip_address), user_id)
+logger.error("Card verification failure logged for transaction ID: %s", transaction_id)
+Secure logging notes
+	•	Use non-sensitive identifiers (e.g. user ID or transaction ID).
+	•	Avoid printing credentials, tokens or full IPs/card data.
+	•	Using functions like masked_ip() could anonymise or partially redact data (e.g. store 192.168.xxx.xxx).
+	•	Retain enough context (e.g. event type, severity, non-PII identifiers) for incident response and anomaly detection.
+Task 3: Reflection
+The principle of data minimisation governs secure logging in production systems. Only log what is necessary for troubleshooting or auditing and never expose sensitive data. Avoid logs storing passwords, tokens, card numbers or PII in clear text. Additionally, protect logs at rest and in transit, and ensure that logs use access controls and tamper-evidence mechanisms.
+A core trade-off between debugging detail and user data protection is between diagnostic depth and user privacy. While detailed logs help developers reproduce and fix bugs, they can inadvertently leak secrets or violate compliance. For example, revealing full user credentials or IP addresses may help debug login flows, but poses a major risk if malicious actors gain access to them.
+Attackers can exploit insecure logs in several ways. They may use logs to escalate privileges, pivot within systems, harvest credentials or identify system weaknesses. Moreover, compromised logs can undermine non-repudiation and legal investigations if they’re tampered with or untrustworthy. Logging securely is therefore a crucial part of secure software design and must be treated with the same care as database storage or API exposure.

@@ -1,0 +1,115 @@
+1.
+Question 1
+In this activity, you will critically analyse two major cybersecurity incidents: SolarWinds and Equifax. 
+
+First, research each case study. Use reliable sources such as news articles from reputable outlets, official government or regulatory reports and company statements.
+
+Then, based on your research, answer these questions.
+
+What were the most significant failures or oversights that contributed to each breach? How do these reflect different types of cybersecurity risk – technical, human or organisational?
+
+
+
+SolarWinds
+Primary failures: compromise of the vendor build pipeline that allowed malicious code to be signed and distributed; insufficient supply chain controls and vendor assurance; limited internal detection and telemetry to spot anomalous signed updates.
+
+Risk types: Organisational (weak vendor governance, inadequate build integrity processes) and technical (insufficient build hardening, lack of runtime visibility). Human factors contributed indirectly through gaps in oversight and incident readiness.
+
+Equifax
+Primary failures: failure to apply a known Apache Struts patch on an internet facing application; poor network segmentation and data governance that allowed lateral movement and mass access to PII; inadequate monitoring and log retention.
+Risk types: Technical (unpatched vulnerability, legacy systems), human (operational oversight in patching), and organisational (weak governance, unclear ownership of remediation).
+Feedback
+Strong answers should highlight not just what failed, but why it mattered. For Equifax, this might include failure to patch a known vulnerability and lack of internal communication. For SolarWinds, consider the risk of supply chain compromise and the failure to detect a sophisticated, long-term attack. Try to classify the risks (technical vs human vs organisational) and explore how they interacted.
+
+1 / 1 point
+2.
+Question 2
+Compare the nature and sophistication of the threat actors involved. How did each attack differ in terms of intent, scale and stealth?
+
+SolarWinds
+Actor sophistication: very high; nation state APT tradecraft including supply chain subversion, signed malware, and living off the land techniques.
+Intent: strategic espionage and long term access to high value targets.
+
+Scale and stealth: broad potential reach via a widely deployed product; highly stealthy with long dwell time and carefully blended command and control.
+
+Equifax
+Actor sophistication: operationally disciplined but used a known exploit rather than novel supply chain techniques.
+Intent: mass data theft (personal data and possibly trade secrets), with alleged state linked motives in later attribution.
+Scale and stealth: direct, concentrated exfiltration of massive PII volumes; stealth achieved through log deletion, proxying, and slow exfiltration over weeks.
+Feedback
+A strong response should clearly distinguish between SolarWinds, where the attackers were likely state-sponsored, and Equifax, which involved financially motivated cybercriminals. Explain that the SolarWinds attackers used a highly sophisticated supply chain attack to infiltrate thousands of organisations over an extended period, remaining undetected for months. In contrast, the Equifax attackers exploited an unpatched vulnerability in a widely used web application to access sensitive data more quickly and directly. You should also compare the level of stealth (e.g. SolarWinds used advanced evasion techniques like signed malicious updates), and the intentions behind the breaches – long-term surveillance versus data theft for financial gain.
+
+1 / 1 point
+3.
+Question 3
+Which organisation responded more effectively to its breach, and why? Consider detection time, communication, containment and public accountability. 
+
+
+Equifax’s post breach response was more direct and accountable, despite its initial operational failures; SolarWinds’ response was hampered by the attack’s stealth and supply chain complexity.
+Detection: Equifax detected unauthorized access internally; SolarWinds’ compromise was discovered externally by another victim.
+Communication: Equifax provided clearer executive level accountability and public testimony; SolarWinds’ disclosures were slower and depended on multiple external investigators.
+Containment: Equifax shut down the affected portal and patched systems; SolarWinds required coordinated, complex remediation across thousands of customers.
+Accountability: Equifax faced visible executive fallout and regulatory action; SolarWinds’ accountability was more diffuse because the attack exploited vendor trust.
+Feedback
+Effective answers should compare both detection timelines and the quality of the organisational response. For example, Equifax took over two months to publicly disclose the breach after discovering it, and their initial communication was widely criticised for being unclear and poorly managed (e.g. sending affected users to a separate domain that resembled a phishing site). Internally, they also failed to follow up on a security alert to patch the exploited vulnerability.
+
+In contrast, SolarWinds' breach was discovered not by the company itself, but by a third party (FireEye), and by the time it was exposed, the attackers had already been inside systems for months. However, once discovered, SolarWinds cooperated more transparently with federal investigators and customers, and undertook a significant overhaul of their development pipeline and security controls.
+
+Strong responses will weigh both practical measures (e.g. how systems were contained or remediated) and reputational handling (e.g. public trust, regulatory engagement and accountability). Consider which company took more concrete steps to prevent similar breaches in the future, and how well each managed external messaging during the crisis.
+
+1 / 1 point
+4.
+Question 4
+What were the short- and long-term consequences in each case (e.g. financial, legal, reputational)? Which breach do you believe caused great lasting damage, and why?
+
+
+SolarWinds
+Short term: widespread forensic response across government and industry; operational disruption and urgent patching/mitigation.
+Long term: major policy and supply chain security reforms; reputational damage around build integrity; financial impacts concentrated in remediation and insurance.
+
+Equifax
+Short term: exposure of ~145 million consumers’ PII; immediate reputational collapse and executive departures.
+Long term: large regulatory settlements and litigation costs; long term consumer remediation obligations; sustained reputational harm.
+
+Greater lasting damage: Equifax — because the breach directly harmed individuals at scale, produced massive financial penalties, and left enduring consumer trust damage.
+Feedback
+Strong answers should address financial, legal and reputational impacts. Equifax exposed personally identifiable information of 147 million people, resulting in a $700 million settlement and executive resignations. SolarWinds affected fewer direct victims but included major US government agencies, posing a national security threat and undermining trust in the software supply chain.
+
+Effective responses should compare the type of data compromised (consumer versus institutional), the scale of response (lawsuits versus congressional hearings) and the lasting consequences for public trust and business credibility. Don't just focus on size: consider who was affected and how deeply.
+
+1 / 1 point
+5.
+Question 5
+What should organisations learn from these incidents? Provide at least two concrete recommendations for managing cybersecurity risk based on your analysis. 
+
+
+Lessons: supply chain compromise and basic hygiene failures are both existential threats; governance and people are as important as technology.
+Concrete recommendations:
+1. Enforce vendor and supply chain controls — require SBOMs, reproducible builds, code signing verification, regular third party security audits, and least privilege vendor access.
+2. Automate and prioritise patch management — maintain an accurate asset inventory, apply critical internet facing patches within strict SLAs, and use automated deployment and verification pipelines.
+Additional actions: implement zero trust segmentation, robust telemetry and anomaly detection, and regular incident response tabletop exercises.
+Feedback
+Look for specific, actionable takeaways such as improve patch management processes, audit and monitor third-party dependencies, enhance threat detection and response capabilities, or establish clearer internal communication channels for security alerts.
+
+Avoid generic suggestions like ‘improve security’ – these lack detail and insight. Strong answers should clearly connect the recommendations to the failures identified in each case. For example, Equifax’s delayed patching suggests a need for stricter vulnerability management, while SolarWinds highlights the need for software supply chain security and code integrity checks.
+
+Your recommendations should reflect what went wrong, show an understanding of the root causes and be realistic for organisational implementation.
+
+1 / 1 point
+6.
+Question 6
+What do the case studies reveal about the biggest challenges in cyber security today? In your view, are these challenges mostly about technology, people or process? How should organisations prioritise their response? 
+
+
+Revealed challenges: systemic complexity (supply chains, legacy systems), limited visibility, and weak governance.
+Primary domain: these challenges are mostly about process and people, amplified by complex technology. Technology creates the attack surface, but process failures (patching, vendor oversight) and human factors (awareness, accountability) determine whether vulnerabilities become breaches.
+Prioritisation guidance:
+1. Process first: fix governance, asset inventory, patch SLAs, and vendor risk processes.
+2. People second: assign clear ownership, train staff, and build a security culture with executive accountability.
+3. Technology third: deploy zero trust controls, segmentation, and advanced detection to enforce and support the processes and people.
+Feedback
+The best responses take a clear, well-supported position, for example, arguing that process failures were the root cause or that human error outweighed technical issues. You should support your view with evidence from both case studies.
+
+Aim to connect themes across the two breaches, such as poor communication, lack of accountability, over-reliance on third-party tools or inadequate response planning. Go beyond simply summarising the incidents. Show how these challenges reveal deeper organisational or systemic weaknesses.
+
+Your answer should conclude with a thoughtful view on how organisations should prioritise improvement, whether through better training, process redesign or more resilient technologies.

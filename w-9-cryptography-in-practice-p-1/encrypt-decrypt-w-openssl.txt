@@ -1,0 +1,35 @@
+Question 1
+
+Task
+OpenSSL is a widely used open-source library and toolkit that implements cryptography and the SSL/TLS protocols, making it essential for encryption and secure communication in real-world systems. 
+
+1. Prepare a plaintext file
+Create a text file named secret.txt containing a short message, such as This is a confidential message.
+
+2. Encrypt the file
+• Use OpenSSL with AES-256-CBC to encrypt the file: openssl enc -aes-256-cbc -salt -in secret.txt -out secret.enc
+• Choose a password when prompted.
+
+3. Decrypt the file
+• Decrypt the file using OpenSSL: openssl enc -d -aes-256-cbc -in secret.enc -out recovered.txt
+• Confirm that recovered.txt matches the original.
+
+4. Quick reflection
+
+Write 150–200 words answering the following questions.
+• What did each command do?
+• Why is using salt important in encryption?
+• What risks still exist if the password is weak?
+
+Feedback
+What each command did?
+openssl enc -aes-256-cbc -salt -in secret.txt -out secret.enc — invoked OpenSSL’s symmetric encryption tool to encrypt secret.txt with AES‑256 in CBC mode, adding a random salt and prompting for a passphrase; output written to secret.enc. The tool derived an encryption key from the passphrase and salt.
+
+openssl enc -d -aes-256-cbc -in secret.enc -out recovered.txt — decrypted secret.enc using the passphrase, reversing the key derivation and AES‑CBC operation to recreate recovered.txt. The snapshot shows the decrypted file matched the original message.
+
+Why using salt is important
+
+Salt introduces randomness into the key derivation so identical passwords do not produce identical keys or cyphertexts. This prevents precomputed rainbow‑table attacks and forces attackers to brute‑force each salted cyphertext separately, greatly increasing the cost of offline attacks.
+
+Risks if the password is weak
+A weak passphrase remains the primary vulnerability: attackers can perform dictionary or brute‑force attacks against the encrypted file offline. Deprecated KDFs (as the warning indicates) make brute‑forcing easier; using a slow, modern KDF (PBKDF2 with many iterations, script, or Argon2) plus a high‑entropy passphrase is essential to mitigate this risk.

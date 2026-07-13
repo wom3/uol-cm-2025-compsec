@@ -1,0 +1,124 @@
+Question 1
+
+Which of the following best describes a brute force attack?
+
+
+It uses acoustic signals to infer passwords.
+It tries every possible combination of characters until the correct one is found.
+It intercepts communication between two parties.
+It uses a dictionary of common passwords to guess login credentials.
+
+It tries every possible combination of characters until the correct one is found.
+Nice work
+Brute force attacks are exhaustive and try all combinations.
+
+
+Question 2
+
+Why are dictionary attacks often faster than brute force attacks?
+
+They exploit insecure network connections.
+They use timing variations to extract secret information.
+They use precompiled lists of common passwords.
+They require physical access to the device.
+
+They use precompiled lists of common passwords.
+Nice work
+Dictionary attacks rely on known, likely passwords.
+
+
+Question 3
+What is the main advantage of salting passwords before hashing?
+
+It allows passwords to be recovered easily by admins.
+It improves user experience during login.
+It encrypts passwords using public keys.
+It prevents the use of rainbow tables by attackers.
+
+It prevents the use of rainbow tables by attackers.
+Nice work
+Salting ensures each hash is unique and defeats precomputed attacks.
+
+Question 4
+Which of the following is an example of a side channel attack?
+
+Phishing users to reveal passwords
+Measuring power consumption to infer cryptographic keys
+Logging into a system using guessed credentials
+Intercepting unencrypted HTTP traffic
+
+Measuring power consumption to infer cryptographic keys
+Nice work
+This is a form of a side channel attack.
+
+Question 5
+What is the function of CAPTCHA in preventing brute force attacks?
+
+It replaces passwords with biometric data.
+It encrypts login credentials during transmission.
+It hashes user passwords before storing them.
+It distinguishes humans from automated login attempts.
+
+It distinguishes humans from automated login attempts.
+Nice work
+CAPTCHA blocks bots and automated tools.
+
+Question 6
+What role do tools like Hydra and John the Ripper play in attacks?
+
+They automate brute force and dictionary attacks.
+They analyse physical emissions to extract data.
+They create fake certificates to spoof websites.
+They inject malware into encrypted files.
+
+They automate brute force and dictionary attacks.
+Nice work
+These tools speed up password guessing attacks.
+
+Question 7
+Which type of MITM attack involves directing users to malicious websites?
+
+Timing injection
+DNS spoofing
+Wi-Fi eavesdropping
+HTTPS stripping
+
+DNS spoofing
+Nice work
+DNS spoofing redirects traffic to malicious sites.
+
+Question 8
+What is a key characteristic of constant-time algorithms?
+
+They generate random passwords.
+They detect anomalies in network traffic.
+They run for the same amount of time regardless of input.
+They only work for encrypted data.
+
+They run for the same amount of time regardless of input.
+Nice work
+This prevents attackers from inferring data from execution time.
+
+Question 9
+Why are smart cards vulnerable to power analysis attacks?
+
+They store passwords in plaintext.
+They leak information through power consumption.
+They use short, predictable keys.
+They connect to untrusted networks.
+
+They leak information through power consumption.
+Nice work
+Power traces can be analysed to extract secrets.
+
+Question 10
+How can users verify a website is using a trusted digital certificate?
+
+Confirm the site loads quickly and without ads.
+Look for a CAPTCHA on the page.
+Verify the padlock icon and certificate details.
+Check the IP address in the browser bar.
+
+Verify the padlock icon and certificate details.
+Nice work
+A padlock indicates a valid SSL/TLS certificate.

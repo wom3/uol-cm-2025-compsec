@@ -1,0 +1,5 @@
+Approach                 Visibility        Attacker perspective match               Typical tools                       Primary strength
+SAST                    Full source code           Low                              Static analyzers; linters.     Finds coding flaws early
+Black‑box DAST       No internal knowledge        High              Dynamic scanners; web fuzzers; proxy tools     Exercises runtime behavior like an external attacker
+Unit testing         Internal, narrow scope      Very low                       xUnit frameworks                  Verifies small components quickly
+White‑box testing     Full system knowledge     Medium                    Code review, white‑box fuzzing           Deep coverage but not attacker‑realistic

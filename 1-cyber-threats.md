@@ -1,0 +1,162 @@
+@root: Identifying and Classifying Cyber Threats
+- @branch: Introduction to Cyber Threats
+  - overview == core ideas, threat context, + attacker motives
+  - Definition of cyber threats
+    - unauthorised acts/events harming systems, networks, devices, or data via theft, disruption, disclosure, damage, or misuse
+      - examples == malware, intrusion, misuse, service loss
+  - Importance of understanding cyber threats in the digital age
+    - digital dependence => cyber incidents affect confidentiality, integrity, availability, finances, legal position, + reputation
+  - Threat landscape: every organisation is a potential victim and weak basic security increases exposure
+    - any organisation holds value; weak controls make compromise easier with common tools + known weaknesses
+  - Common cyber attacks often target Internet-exposed systems using known weaknesses and commodity tools
+    - attackers scan exposed services, outdated software, weak passwords, + easily deceived users
+  - Common attack lifecycle: survey, delivery, breach, and affect
+    - survey == recon; delivery == malicious content; breach == entry; affect == theft, disruption, persistence
+  - Threat actors: cyber criminals, industrial competitors, foreign intelligence services, hackers, hacktivists, and insiders
+    - motives vary == profit, espionage, ideology, challenge, sabotage, or accidental misuse
+
+- @branch: Types of Cyber Threats
+  - overview == common attack families + entry methods
+  - Malware: viruses, worms, trojans, ransomware
+    - viruses attach to files; worms self-spread; trojans disguise; ransomware encrypts systems/data for payment
+      - example == WannaCry ransomware outbreak
+  - Phishing: email scams, spear phishing, whaling
+    - phishing steals credentials or money; spear phishing targets individuals; whaling targets executives
+  - Denial of Service (DoS) and Distributed Denial of Service (DDoS) attacks
+    - attackers flood services with traffic => legitimate users lose access; DDoS uses many compromised devices
+  - Social Engineering: pretexting, baiting, quid pro quo
+    - attackers exploit trust + behaviour instead of code flaws
+      - examples == fake stories, infected USB gifts, fake support offers
+  - Supply Chain Attacks: targeting third-party vendors and suppliers
+    - compromise trusted providers, updates, or contractors => downstream organisations inherit risk
+  - Exploitation of unpatched vulnerabilities and weak configurations
+    - known bugs + unsafe defaults create easy entry points
+  - Malicious downloads, blocked domains, and unauthorised software execution
+    - harmful attachments, fake software, scripts, + malicious domains can launch compromise quickly
+  - Credential attacks enabled by weak password policies and excessive user privileges
+    - guessed/reused passwords + broad privileges let one account expose many assets
+
+- @branch: Reducing Exposure to Common Cyber Attacks
+  - overview == baseline controls reduce attack success + impact
+  - Boundary firewalls and internet gateways: web filtering, proxying, content checking, firewall policy
+    - control inbound/outbound traffic + block unnecessary services, dangerous sites, and risky downloads
+  - Malware protection: detecting and responding to known malicious code
+    - antivirus, email scanning, + endpoint tools identify, quarantine, + stop known threats
+  - Patch management: fixing known vulnerabilities quickly
+    - rapid updates reduce attacker time to exploit published flaws
+  - Allow listing and execution control: preventing unknown software and AutoRun-based compromise
+    - approved applications only; disable risky auto-execution from removable media
+  - Secure configuration: minimising unnecessary services and functionality
+    - remove unused software, change defaults, disable needless services, + harden settings
+  - Password policy and user access control: enforcing least privilege and limiting execution rights
+    - strong passwords + minimal permissions reduce account abuse + lateral movement
+  - Security monitoring: identifying unexpected or suspicious activity
+    - logs, alerts, + network review help detect compromise early
+  - User training, education, and awareness: improving staff reporting and phishing resistance
+    - trained users recognise suspicious requests, links, attachments, + social engineering cues
+  - Device controls: restricting unauthorised access to critical or inherently insecure internal services
+    - limit which devices can reach sensitive internal services or legacy systems
+  - Security incident management: reducing business impact through planned response
+    - prepared response => faster containment, recovery, communication, + service restoration
+  - Real World Examples of Cyber Threats
+    - case studies show how weak controls, trusted suppliers, + exposed systems create real damage
+  - Notable cyber attacks in recent history (e.g., WannaCry, SolarWinds, Colonial Pipeline)
+    - WannaCry == unpatched systems; SolarWinds == supply chain; Colonial Pipeline == ransomware + infrastructure disruption
+  - NCSC guidance: basic cyber hygiene and Cyber Essentials controls reduce the impact of common attacks
+    - basics often outperform complexity; Cyber Essentials + 10 Steps build resilient minimum security
+
+@root: Classifying Cyber Threats
+- @branch: Threat Origins
+  - overview == classify by who starts the threat
+  - Insider threats
+    - threat originates from someone with legitimate access == employee, ex-employee, contractor, or partner
+  - Types of insider threat: malicious and negligent
+    - malicious insiders act deliberately; negligent insiders cause harm through mistakes, loss, or unsafe behaviour
+  - Insider threat example: Tesla 2020
+    - bribery attempt showed insiders can become malware entry points if not reported
+  - External threats
+    - outsiders include cybercriminals, ransomware gangs, hacktivists, state actors, + organised hacker groups
+  - External threat example: WannaCry and the NHS
+    - external ransomware spread through vulnerable systems => disrupted healthcare services + appointments
+
+- @branch: Attack Vectors
+  - overview == classify by where/how the attack operates
+  - Network-based threats
+    - target infrastructure such as servers, routers, gateways, cloud platforms, + communications paths
+  - Examples of network-based threats
+    - DDoS floods services; man-in-the-middle intercepts traffic; port scanning finds exposed services
+  - Endpoint threats
+    - target laptops, desktops, tablets, smartphones, + user-facing devices
+  - Examples of endpoint threats
+    - phishing steals passwords; keyloggers capture keystrokes; ransomware encrypts endpoint files
+      - endpoint compromise can become a network-wide foothold
+
+- @branch: Threat Impact
+  - overview == classify by business damage caused
+  - Financial impact
+    - losses include ransom, recovery cost, legal fees, fines, downtime, + lost revenue
+  - Financial impact example: Colonial Pipeline 2021
+    - ransomware caused multimillion-dollar payment + wider operational + recovery costs
+  - Reputational impact
+    - public trust drops after exposed data, outage, or visible compromise
+  - Reputational impact example: Sony Pictures 2014
+    - leaked emails + unreleased films caused embarrassment, legal fallout, + long-term brand harm
+
+- @branch: Using Classification to Understand Risk
+  - overview == classify by origin, vector, + impact together
+  - Simple classification model
+    - threat may be insider/external, network/endpoint, + financial/operational/reputational in effect
+  - Why classification matters
+    - clear categories help prioritise controls, training, monitoring, + incident response planning
+
+@root: Comprehensive Review of Cyber-Attacks and Cybersecurity
+- @branch: Scope and Importance of Cyberspace
+  - overview == review explains why cyber risk now shapes society + security
+  - Dependence on cyberspace
+    - commerce, government, culture, communication, + infrastructure now rely heavily on digital systems
+  - Why cyber-attacks matter
+    - cyber incidents can cause financial loss, espionage, service outage, political disruption, + public safety harm
+  - Key characteristics of cyberspace
+    - low entry cost, attribution difficulty, global reach, rapid change, + asymmetry favour diverse attackers
+- @branch: Fundamental Concepts and Definitions
+  - overview == review clarifies core terminology + security principles
+  - Definition of cyber threats
+    - events able to harm missions, assets, people, or services via access, disruption, disclosure, destruction, or alteration
+  - Definition of cyber-attack
+    - unauthorised cyber act violating security policy => damage, disruption, or loss of service/information access
+  - Cybercrime, cyber-attack, and cyberwarfare
+    - cybercrime == unlawful digital offence; cyber-attack == disruption/damage; cyberwarfare == strategic or conflict-level cyber operations
+  - CIA triad
+    - confidentiality protects secrecy; integrity protects correctness; availability keeps systems usable on demand
+- @branch: Sources and Types of Cyber Threats
+  - overview == review maps attackers + common techniques
+  - Main sources of cyber threats
+    - foreign actors, insiders, supply chains, criminals, hacktivists, terrorists, + weak local capability all create risk
+  - Common cyber-attack methods
+    - DoS, DDoS, logic bombs, sniffers, trojans, viruses, worms, spam, botnets, phishing, + malware
+  - Risks from insider and supply chain exposure
+    - trusted access + third-party dependence can magnify compromise without obvious external intrusion
+- @branch: Cybersecurity Approaches and Controls
+  - overview == protection requires multiple technical + human layers
+  - Major areas of cybersecurity
+    - network, application, information, operational, cloud security + user training each address a distinct control layer
+  - Role of user awareness and training
+    - people often trigger incidents accidentally; awareness reduces phishing, unsafe attachments, + rogue USB use
+  - Need for layered protection
+    - combine controls, processes, access rules, monitoring, + policy rather than relying on one tool
+- @branch: Cybersecurity Policy and Governance
+  - overview == policy turns security goals into rules + accountability
+  - Purpose of cybersecurity policy
+    - defines responsibilities, standards, + expected behaviour for protecting systems and information
+  - National and organisational policy differences
+    - national policy focuses on public regulation + security; organisational policy focuses on internal compliance + operations
+  - Governance challenges
+    - unclear ownership, competing business goals, + weak enforcement reduce policy effectiveness
+- @branch: Overall Conclusions from the Review
+  - overview == cyber risk is evolving, shared, + hard to contain traditionally
+  - Cyber threats are multidimensional
+    - threats cross legal, technical, political, + organisational boundaries while changing quickly
+  - Cooperation is essential
+    - governments, private sector, + researchers must collaborate for stronger resilience + response
+  - Cybersecurity as an evolving field
+    - continuous study, monitoring, policy updates, + adaptive controls remain necessary as technology changes
