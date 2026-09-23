@@ -1,0 +1,19 @@
+Welcome to the module
+ Welcome to Cybersecurity! This module invites you to explore one of the most exciting and fast-moving areas of computer science. Whether you are fascinated by the technical challenges of encryption, intrigued by the social and ethical dimensions of online security or keen to develop practical skills for a career in technology, this module will give you the tools and confidence to engage with the digital security challenges shaping our world.
+
+What this module is about
+
+Cybersecurity sits at the heart of modern computing. In this module, you will learn how to identify and classify different types of cyber threats, explore how to secure networks and operating systems, and apply cryptographic techniques to protect sensitive information. You will also discover how emerging technologies such as blockchain, artificial intelligence and quantum computing are reshaping the field.
+
+But cybersecurity isn’t only about technology – it is also about people, ethics and society. Throughout the module, you will reflect on the environmental, social and ethical implications of security practices, including principles of equality, diversity and inclusion (EDI). This broader perspective will help you understand how to design security solutions that are not only effective, but also responsible and inclusive.
+
+How you will learn
+
+The module is organised into 10 topics. Each includes videos, readings, discussion prompts and practice quizzes designed to build your understanding step by step. You’ll have opportunities to test your knowledge through interactive activities, and to engage with your peers in discussions about real-world cybersecurity issues.
+
+Why this matters
+
+By the end of the module, you will not only be able to implement technical solutions such as firewalls, cryptographic algorithms or blockchain-based security mechanisms, but also evaluate their wider impact. This combination of technical expertise and critical awareness is essential for anyone who wants to contribute to building secure, ethical and sustainable digital ecosystems.
+
+We’re delighted to have you on this journey. Cybersecurity is a challenging field but it is also one of the most rewarding. By engaging fully with the learning activities, assessments and discussions, you will gain knowledge and skills that are highly valued by employers, and vital for today’s connected world.
+
