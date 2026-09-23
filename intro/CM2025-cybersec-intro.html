@@ -17,10 +17,9 @@ article { font-family: var(--font-body); font-size: var(--body-size); max-width:
 h1 { font-size: var(--h1); color: var(--accent); }
 h2 { font-size: var(--h2); color: var(--accent); }
 h3 { font-size: var(--h3); color: var(--accent); }
-.align-center { text-align: center; }
 .align-right { text-align: right; }
 .callout { border-left: 3px solid var(--accent); padding: .5rem 1rem; background: color-mix(in srgb, var(--accent) 8%, transparent); }
-table { border-collapse: collapse; } th, td { padding: .25rem .75rem; }
+table { border-collapse: collapse; margin: 1rem 0; } th, td { padding: .25rem .75rem; border: 1px solid #ccc; vertical-align: top; text-align: left; }
 section.sheet { page-break-after: always; border-bottom: 1px dashed #ccc; }
 </style>
 </head>
@@ -31,249 +30,28 @@ section.sheet { page-break-after: always; border-bottom: 1px dashed #ccc; }
 <p>Cybersecurity is a key area of study in theoretical and applied Computer Science. This module imparts key cybersecurity principles such as encryption and authentication, essential for evaluating and enhancing the security of computing applications. Through real-world security scenarios, you will apply and assess core computer science concepts, honing their problem-solving and critical evaluation skills. The module fosters independence as you navigate complex cybersecurity issues, learning how to produce organised work. Additionally, it provides a platform for substantial work from problem inception to implementation, equipping you with the practical skills crucial for addressing contemporary cybersecurity challenges. </p>
 <p>This cybersecurity module provides a structured exploration into the domain of digital security. Drawing upon engineering, computational and mathematical foundations, the curriculum enables you to identify and categorise cyber threats, address network security challenges and implement cryptographic methods for data protection. The module also introduces blockchain technology, highlighting its relevance in enhancing transactional security. A notable aspect of the module is its emphasis on the broader societal and ethical dimensions of cybersecurity, prompting you to assess practices in light of environmental and equality, diversity and inclusion (EDI) considerations.   </p>
 <p>The module consists of the following topics: </p>
-<ol>
-  <li>Identification and classification of cyber threats </li>
-  <li>Cybersecurity frameworks, standards, legal, ethical and professional considerations </li>
-  <li>Network and OS security </li>
-  <li>Application security principles: testing and debugging </li>
-  <li>Cryptography in practice</li>
-  <li>Blockchain for cybersecurity</li>
-  <li>Incident response and forensics </li>
-  <li>Emerging trends </li>
-  <li>EDI principles, sustainable digital ecosystems and employability in cybersecurity </li>
-  <li>Real-world cybersecurity case studies: design, test and communicate security solutions. </li>
-</ol>
+<ol><li>Identification and classification of cyber threats </li><li>Cybersecurity frameworks, standards, legal, ethical and professional considerations </li><li>Network and OS security </li><li>Application security principles: testing and debugging </li><li>Cryptography in practice </li><li>Blockchain for cybersecurity </li><li>Incident response and forensics </li><li>Emerging trends </li><li>EDI principles, sustainable digital ecosystems and employability in cybersecurity </li><li>Real-world cybersecurity case studies: design, test and communicate security solutions. </li></ol>
 <h2><span style="color: #3c3c3c; font-size: 1.45em"><strong>Course Goals and Objectives</strong></span></h2>
 <p>Upon successful completion of this course, you will be able to: </p>
-<ol>
-  <li>Apply knowledge of engineering and computational principles to identify and classify various cyber threats based on severity and impact.</li>
-  <li>Analyse network security challenges using principles of mathematics and engineering to select and apply appropriate security measures such as configuring firewalls and setting up Intrusion Detection Systems (IDSs).
-    <li>Understand mathematical and computational techniques to implement basic cryptographic algorithms ensuring data integrity and confidentiality. </li>
-    <li>Design blockchain solutions for enhancing cybersecurity in areas like secure transactions, considering societal, user and business needs as well as ethical and inclusivity principles. </li>
-    <li>Evaluate the environmental, societal and ethical impact of current cybersecurity practices and propose improvements considering the principles of EDI. </li>
-    <li>Design a cybersecurity solution for a real-world problem, test its effectiveness, ensure it aligns with EDI principles and communicate the findings effectively to both technical and non-technical audiences.</li>
-</li></ol>
-
-<!-- <p>various cyber threats based on severity and impact.  </p>
-<p>firewalls and setting up Intrusion Detection Systems (IDSs).  </p>
-<p>cryptographic algorithms ensuring data integrity and confidentiality.  </p>
-
-<p>engineering to select and apply appropriate security measures such as configuring </p> -->
-
-<!-- <ol></ol>
-<p>practices, and propose improvements considering the principles of EDI.  </p>
-<ol></ol>
-<p> </p>
-<p>technical and non-technical audiences. </p> -->
+<ol><li>Apply knowledge of engineering and computational principles to identify and classify various cyber threats based on severity and impact.  </li><li>Analyse network security challenges using principles of mathematics and engineering to select and apply appropriate security measures such as configuring firewalls and setting up Intrusion Detection Systems (IDSs).  </li><li>Understand mathematical and computational techniques to implement basic cryptographic algorithms ensuring data integrity and confidentiality.  </li><li>Design blockchain solutions for enhancing cybersecurity in areas like secure transactions, considering societal, user and business needs as well as ethical and inclusivity principles.  </li><li>Evaluate the environmental, societal and ethical impact of current cybersecurity practices, and propose improvements considering the principles of EDI.  </li><li>Design a cybersecurity solution for a real-world problem, test its effectiveness, ensure it aligns with EDI principles and communicate the findings effectively to both technical and non-technical audiences. </li></ol>
 <h2><span style="color: #3c3c3c; font-size: 1.45em"><strong>Textbook and Readings</strong></span></h2>
-<p>This module makes use of a wide range of reading material which you will encounter as you work through the course. The material is available via the online library, and it includes journal and magazine articles as well as some textbook references.  There will also be discussion prompts asking you to do some independent research using online sources. </p>
-<p>The course consists of ten topics divided into 20 weeks that focus on key concepts. </p>
+<p class="align-center">This module makes use of a wide range of reading material which you will encounter as you work through the course. The material is available via the online library, and it includes journal and magazine articles as well as some textbook references.  There will also be discussion prompts asking you to do some independent research using online sources. </p>
 <h2><span style="color: #3c3c3c; font-size: 1.45em"><strong>Course Outline </strong></span></h2>
-<table border="1" cellpadding="10" cellspacing="0" style="border-collapse: collapse; width: 100%;">
-    <thead>
-        <tr style="background-color: #f2f2f2;">
-            <th style="text-align: left; width: 40%;">Cyber Security Topic</th>
-            <th style="text-align: left; width: 60%;">Learning Outcomes</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td style="vertical-align: top;">
-                <h3>Topic 1: <span style="font-size: 1.09em">Identification and classification of cyber threats</span></h3>
-            </td>
-            <td style="vertical-align: top;">
-                <p><strong>Learning outcomes: </strong></p>
-                <ol>
-                    <li><span style="font-size: 1.09em">Define and explain cyber threats.</span></li>
-                    <li><h3><span style="font-size: 1.09em">Identify different types of cyber threats.</span></h3></li>
-                    <li><h3><span style="font-size: 1.09em">Classify cyber threats based on their nature, source and impact.</span></h3></li>
-                </ol>
-            </td>
-        </tr>
-        <tr>
-          <td>
-              <h3>Topic 2: <span style="font-size: 1.09em">Cybersecurity frameworks, standards, legal, ethical and professional considerations</span></h3>
-          </td>
-          <td style="vertical-align: top;">
-              <p><strong>Learning outcomes: </strong></p>
-              <ol>
-                  <li><span style="font-size: 1.09em">Explain the role and scope of cybersecurity standards and internal policies in supporting organisational security objectives.</span></li>
-                  <li><span style="font-size: 1.09em">Demonstrate understanding of the legal, ethical and professional responsibilities involved in cybersecurity practice.</span></li>
-                  <li><span style="font-size: 1.09em">Apply cybersecurity frameworks and ethical reasoning to assess and respond to complex security challenges.</span></li>
-              </ol>
-          </td>
-        </tr>
-        <tr>
-          <td>
-              <h3>Topic 3: <span style="font-size: 1.09em">Network and OS security</span></h3>
-          </td>
-          <td style="vertical-align: top;">
-              <p><strong>Learning outcomes: </strong></p>
-              <ol>
-                  <li><span style="font-size: 1.09em">Explain how network and operating system layers interact and describe their security features, vulnerabilities and role in supporting secure digital infrastructures.</span></li>
-                  <li><span style="font-size: 1.09em">Evaluate the effectiveness of system-level security measures, including intrusion detection, prevention, access control and audit tools, through case studies and applied contexts.</span></li>
-                  <li><span style="font-size: 1.09em">Apply practical techniques in network monitoring and OS hardening to analyse and respond to security threats.</span></li>
-              </ol>
-          </td>
-        </tr>
-        <tr>
-          <td>
-              <h3>Topic 4: <span style="font-size: 1.09em">Application security principles: testing and debugging</span></h3>
-          </td>
-          <td style="vertical-align: top;">
-              <p><strong>Learning outcomes: </strong></p>
-              <ol>
-                  <li><span style="font-size: 1.09em">Identify common application security vulnerabilities and explain why they matter in software development.</span></li>
-                  <li><span style="font-size: 1.09em">Apply secure coding principles to mitigate common security threats.</span></li>
-                  <li><span style="font-size: 1.09em">Demonstrate testing and secure debugging practices.</span></li>
-              </ol>
-          </td>
-        </tr>
-        <tr>
-          <td>
-              <h3>Topic 5: <span style="font-size: 1.09em">Cryptography in practice</span></h3>
-          </td>
-          <td style="vertical-align: top;">
-              <p><strong>Learning outcomes: </strong></p>
-              <ol>
-                  <li><span style="font-size: 1.09em">Define cryptography and the importance of its management.</span></li>
-                  <li><span style="font-size: 1.09em">Apply common cryptographic techniques.</span></li>
-                  <li><span style="font-size: 1.09em">Describe different types of cybersecurity attacks, including brute force, dictionary, man-in-the-middle and side-channel attacks.</span></li>
-              </ol>
-          </td>
-        </tr>
-
-        <tr>
-          <td>
-              <h3>Topic 6: <span style="font-size: 1.09em">Blockchain for cybersecurity</span></h3>
-          </td>
-          <td style="vertical-align: top;">
-              <p><strong>Learning outcomes: </strong></p>
-              <ol>
-                  <li><span style="font-size: 1.09em">Explain how blockchain shares peer-to-peer transactions and supports applications such as smart contracts.</span></li>
-                  <li><span style="font-size: 1.09em">Analyse the role of blockchain in identity management, including the benefits and challenges of self-sovereign identity.</span></li>
-                  <li><span style="font-size: 1.09em">Explore emerging trends in blockchain cybersecurity, including AI, IOT, quantum cryptography and scalable consensus protocols.</span></li>
-              </ol>
-          </td>
-        </tr>
-
-        <tr>
-          <td>
-              <h3>Topic 7: <span style="font-size: 1.09em">Incident response and forensices</span></h3>
-          </td>
-          <td style="vertical-align: top;">
-              <p><strong>Learning outcomes: </strong></p>
-              <ol>
-                  <li><span style="font-size: 1.09em">Describe and apply the phases of the NIST incident response lifecycle</span></li>
-                  <li><span style="font-size: 1.09em">Explain the core digital forensic practices and their role in preserving evidence</span></li>
-                  <li><span style="font-size: 1.09em">Use frameworks and tools (e.g., cyber kill chain, MITRE ATTACK, forensic tools) to investigate cyber incidents.</span></li>
-              </ol>
-          </td>
-        </tr>
-        <tr>
-          <td>
-              <h3>Topic 8: <span style="font-size: 1.09em">Emerging Trends</span></h3>
-            </td>
-            <td style="vertical-align: top;">
-            <p><strong>Learning outcomes: </strong></p>
-              <ol>
-                  <li><span style="font-size: 1.09em">Analyse how cybersecurity uses AI and machine learning for both offensive and defensive purposes, particularly in cryptographic and blockchain contexts.</span></li>
-                  <li><span style="font-size: 1.09em">Evaluate the impact of quantum computing on classical cryptography and explore post-quantum algorithms (e.g., Kyber, Dilithium) adress emerging threats.</span></li>
-                  <li><span style="font-size: 1.09em">Assess IOT security challenges and apply appropriate cryptographic approaches, including lightweight algorithms, to secure constrained devices.</span></li>
-              </ol>
-          </td>
-        </tr>
-
-        <tr>
-          <td>
-                <h3>Topic 9: <span style="font-size: 1.09em">EDI principles, sustainable digital ecosystems and employability in cybersecurity</span></h3>
-              </td>
-              <td style="vertical-align: top;">
-            <p><strong>Learning outcomes: </strong></p>
-              <ol>
-                  <li><span style="font-size: 1.09em">Explain and apply equality, diversity, and inclusion (EDI) principles in the context of cybersecurity.</span></li>
-                  <li><span style="font-size: 1.09em">Evaluate approaches to building, sustainable digital ecosystems, balancing security with environmental, social and ethical considerations.</span></li>
-                  <li><span style="font-size: 1.09em">Develop strategies for employability in cybersecurity, including identifying valued certifications, planning career development and integrating ethical and inclusive practices into your professional pathway.</span></li>
-              </ol>
-          </td>
-        </tr>
-
-        <tr>
-          <td>
-              <h3>Topic 10: <span style="font-size: 1.09em">Real-world cyber security case
-                    studies: design, test and communicate
-                    security solutions</span></h3>
-          </td>
-          <td style="vertical-align: top;">
-            <p><strong>Learning outcomes: </strong></p>
-              <ol>
-                  <li><span style="font-size: 1.09em">Explain the principles of
-cybersecurity in critical
-infrastructure systems, with a
-focus on industrial control
-systems (ICS) and energy
-networks.</span></li>
-                  <li><span style="font-size: 1.09em">Analyse cyber-attack detection
-and mitigation strategies in
-operational technology
-environments, including smart
-monitoring and automated
-response.</span></li>
-                  <li><span style="font-size: 1.09em">Evaluate the challenges of
-securing renewable energy and
-smart grid infrastructures, and propose solutions that balance resilience, sustainability and reliability.</span></li>
-              </ol>
-          </td>
-        </tr>
-    </tbody>
-</table>
-
+<p>The course consists of ten topics divided into 20 weeks that focus on key concepts. </p>
+<table><tr><td><p>Topic 1: <span style="font-size: 1.09em">Identification and classification </span><span style="font-size: 1.09em">of cyber threats</span></p></td><td><p><strong>Learning outcomes: </strong></p><ul><li><span style="font-size: 1.09em">Define and explain cyber threats.</span></li><li><span style="font-size: 1.09em">Identify different types of cyber </span><span style="font-size: 1.09em">threats.</span></li><li><span style="font-size: 1.09em">Classify cyber threats based on </span><span style="font-size: 1.09em">their nature, source and impact.</span></li></ul></td></tr></table>
+<table><tr><td><p>Topic 2: <span style="font-size: 1.09em">Cybersecurity frameworks, </span><span style="font-size: 1.09em">standards, legal, ethical and </span><span style="font-size: 1.09em">professional considerations</span></p></td><td><p><strong>Learning outcomes: </strong></p><ul><li><span style="font-size: 1.09em">Explain the role and scope of </span><span style="font-size: 1.09em">cybersecurity standards and </span><span style="font-size: 1.09em">internal policies in supporting </span><span style="font-size: 1.09em">organisational security </span><span style="font-size: 1.09em">objectives.</span></li><li><span style="font-size: 1.09em">Demonstrate understanding of </span><span style="font-size: 1.09em">the legal, ethical and professional </span><span style="font-size: 1.09em">responsibilities involved in </span><span style="font-size: 1.09em">cybersecurity practice. </span></li><li><span style="font-size: 1.09em">Apply cybersecurity frameworks </span><span style="font-size: 1.09em">and ethical reasoning to assess </span><span style="font-size: 1.09em">and respond to complex security </span><span style="font-size: 1.09em">challenges.</span></li></ul></td></tr></table>
+<table><tr><td><p>Topic 3: <span style="font-size: 1.09em">Network and OS security</span></p></td><td><p><strong>Learning outcomes: </strong></p><ul><li><span style="font-size: 1.09em">Explain how network and </span><span style="font-size: 1.09em">operating system layers interact </span><span style="font-size: 1.09em">and describe their security </span><span style="font-size: 1.09em">features, vulnerabilities and role </span><span style="font-size: 1.09em">in supporting secure digital </span><span style="font-size: 1.09em">infrastructures. </span></li><li><span style="font-size: 1.09em">Evaluate the effectiveness of </span><span style="font-size: 1.09em">system-level security measures, </span><span style="font-size: 1.09em">including intrusion detection, </span><span style="font-size: 1.09em">prevention, access control and </span><span style="font-size: 1.09em">audit tools, through case studies </span><span style="font-size: 1.09em">and applied contexts. </span></li><li><span style="font-size: 1.09em">Apply practical techniques in </span><span style="font-size: 1.09em">network monitoring and OS </span><span style="font-size: 1.09em">hardening to analyse and </span><span style="font-size: 1.09em">respond to security threats.</span></li></ul></td></tr><tr><td><p>Topic 4: <span style="font-size: 1.09em">Application security principles: </span><span style="font-size: 1.09em">testing and debugging</span></p></td><td><p><strong>Learning outcomes: </strong></p><ul><li><span style="font-size: 1.09em">Identify common application </span><span style="font-size: 1.09em">security vulnerabilities and </span><span style="font-size: 1.09em">explain why they matter in </span><span style="font-size: 1.09em">software development.  </span></li><li><span style="font-size: 1.09em">Apply secure coding principles to </span><span style="font-size: 1.09em">mitigate common security </span><span style="font-size: 1.09em">threats.  </span></li><li><span style="font-size: 1.09em">Demonstrate testing and secure </span><span style="font-size: 1.09em">debugging practices.</span></li></ul></td></tr></table>
+<table><tr><td><p>Topic 5: <span style="font-size: 1.09em">Cryptography in practice</span></p></td><td><p><strong>Learning outcomes: </strong></p><ul><li><span style="font-size: 1.09em">Define cryptography and the </span><span style="font-size: 1.09em">importance of its management. </span></li><li><span style="font-size: 1.09em">Compare different types of </span><span style="font-size: 1.09em">encryption and how they are </span><span style="font-size: 1.09em">used. </span></li><li><span style="font-size: 1.09em">Apply common cryptographic </span><span style="font-size: 1.09em">techniques. </span></li><li><span style="font-size: 1.09em">Describe different types of </span><span style="font-size: 1.09em">cybersecurity attacks, including </span><span style="font-size: 1.09em">brute force, dictionary, man-in-</span><span style="font-size: 1.09em">the-middle and side-channel </span><span style="font-size: 1.09em">attacks.</span></li></ul></td></tr><tr><td><p>Topic 6: <span style="font-size: 1.09em">Blockchain for cybersecurity</span></p></td><td><p><strong>Learning outcomes: </strong></p><ul><li><span style="font-size: 1.09em">Explain how blockchain secures </span><span style="font-size: 1.09em">peer-to-peer transactions and </span><span style="font-size: 1.09em">supports applications such as </span><span style="font-size: 1.09em">smart contracts.  </span></li><li><span style="font-size: 1.09em">Analyse the role of blockchain in </span><span style="font-size: 1.09em">identity management, including </span><span style="font-size: 1.09em">the benefits and challenges of </span><span style="font-size: 1.09em">self-sovereign identity. </span></li><li><span style="font-size: 1.09em">Evaluate the ethical, regulatory </span><span style="font-size: 1.09em">and social implications of </span><span style="font-size: 1.09em">blockchain adoption.  </span></li><li><span style="font-size: 1.09em">Explore emerging trends in </span><span style="font-size: 1.09em">blockchain cybersecurity, </span><span style="font-size: 1.09em">including AI, IoT, quantum </span><span style="font-size: 1.09em">cryptography and scalable </span><span style="font-size: 1.09em">consensus protocols. </span></li></ul></td></tr></table>
+<table><tr><td><p>Topic 7 <span style="font-size: 1.09em">Incident response and forensics</span></p></td><td><p><strong>Learning outcomes: </strong></p><ul><li><span style="font-size: 1.09em">Describe and apply the phases of </span><span style="font-size: 1.09em">the NIST incident response </span><span style="font-size: 1.09em">lifecycle.  </span></li><li><span style="font-size: 1.09em">Explain core digital forensic </span><span style="font-size: 1.09em">practices and their role in </span><span style="font-size: 1.09em">preserving evidence.  </span></li><li><span style="font-size: 1.09em">Use frameworks and tools (e.g. </span><span style="font-size: 1.09em">cyber kill chain, MITRE ATT&amp;CK, </span><span style="font-size: 1.09em">forensic tools) to investigate </span><span style="font-size: 1.09em">cyber incidents. </span></li></ul></td></tr><tr><td><p>Topic 8: <span style="font-size: 1.09em">Emerging trends</span></p></td><td><p><strong>Learning outcomes: </strong></p><ul><li><span style="font-size: 1.09em">Analyse how cybersecurity uses </span><span style="font-size: 1.09em">AI and machine learning for both </span><span style="font-size: 1.09em">offensive and defensive </span><span style="font-size: 1.09em">purposes, particularly in </span><span style="font-size: 1.09em">cryptographic and blockchain </span><span style="font-size: 1.09em">contexts.  </span></li><li><span style="font-size: 1.09em">Evaluate the impact of quantum </span><span style="font-size: 1.09em">computing on classical </span><span style="font-size: 1.09em">cryptography and explain how </span><span style="font-size: 1.09em">post-quantum algorithms (e.g. </span><span style="font-size: 1.09em">Kyber, Dilithium) address </span><span style="font-size: 1.09em">emerging threats.  </span></li><li><span style="font-size: 1.09em">Assess IoT security challenges </span><span style="font-size: 1.09em">and apply appropriate </span><span style="font-size: 1.09em">cryptographic approaches, </span><span style="font-size: 1.09em">including lightweight algorithms, </span><span style="font-size: 1.09em">to secure constrained devices. </span></li></ul></td></tr></table>
+<table><tr><td><p>Topic 9: <span style="font-size: 1.09em">EDI principles, sustainable </span><span style="font-size: 1.09em">digital ecosystems and employability in </span><span style="font-size: 1.09em">cybersecurity</span></p></td><td><p><strong>Learning outcomes: </strong></p><ul><li><span style="font-size: 1.09em">Explain and apply equality, </span><span style="font-size: 1.09em">diversity and inclusion (EDI) </span><span style="font-size: 1.09em">principles in cybersecurity. </span></li><li><span style="font-size: 1.09em">Evaluate approaches to building </span><span style="font-size: 1.09em">sustainable digital ecosystems, </span><span style="font-size: 1.09em">balancing security with </span><span style="font-size: 1.09em">environmental, social and ethical </span><span style="font-size: 1.09em">considerations. </span></li><li><span style="font-size: 1.09em">Develop strategies for </span><span style="font-size: 1.09em">employability in cybersecurity, </span><span style="font-size: 1.09em">including identifying valued </span><span style="font-size: 1.09em">certifications, planning career </span><span style="font-size: 1.09em">development and integrating </span><span style="font-size: 1.09em">ethical and inclusive practices </span><span style="font-size: 1.09em">into your professional pathway.</span></li></ul></td></tr><tr><td><p>Topic 10: <span style="font-size: 1.09em">Real-world cyber security case </span><span style="font-size: 1.09em">studies: design, test and communicate </span><span style="font-size: 1.09em">security solutions</span></p></td><td><p><strong>Learning outcomes: </strong></p><ul><li><span style="font-size: 1.09em">Explain the principles of </span><span style="font-size: 1.09em">cybersecurity in critical </span><span style="font-size: 1.09em">infrastructure systems, with a </span><span style="font-size: 1.09em">focus on industrial control </span><span style="font-size: 1.09em">systems (ICS) and energy </span><span style="font-size: 1.09em">networks.</span></li><li><span style="font-size: 1.09em">Analyse cyber-attack detection </span><span style="font-size: 1.09em">and mitigation strategies in </span><span style="font-size: 1.09em">operational technology </span><span style="font-size: 1.09em">environments, including smart </span><span style="font-size: 1.09em">monitoring and automated </span><span style="font-size: 1.09em">response. </span></li><li><span style="font-size: 1.09em">Evaluate the challenges of </span><span style="font-size: 1.09em">securing renewable energy and </span><span style="font-size: 1.09em">smart grid infrastructures, and </span><span style="font-size: 1.09em">propose solutions that balance </span><span style="font-size: 1.09em">resilience, sustainability and </span><span style="font-size: 1.09em">reliability.</span></li></ul></td></tr></table>
 <h2><span style="color: #3c3c3c; font-size: 1.45em"><strong>Learning Activities of This Course </strong></span></h2>
-
 <p>The course is comprised of the following elements:  </p>
-
-<ul>
-
-  <li><strong>Lecture videos.</strong>In each topic, you will find a sequence of videos.</li>
-  <li><strong>Readings. </strong>Each topic will include suggested readings that are a core part of your learning and will cover all the concepts you need for this module.</li>
-  <li><strong>Practice Quizzes. </strong>Each topic will include practice quizzes to help you assess your understanding of the class. You will be allowed unlimited attempts at each practice quiz. There is no time limit on how long you take to complete each attempt at the quiz. These quizes do not contribute towards your final score in the class.</li>
-  <li><strong>Discussion Prompts.</strong>Each topic includes discussion prompts. You will see the discussion prompt alongside other items in the lesson. Each prompt provides a space for you to respond. After responding, you can see and comment on your peers' responses. All prompts and responses are also accessible from the general discussion forum and the module discussion forum.</li>
-</ul>
-
+<ul><li><strong>Lecture videos.</strong> In each topic, you will find a sequence of videos.  </li><li><strong>Readings. </strong>Each topic may include several suggested readings. These are a core part of your learning, and, together with the videos, will cover all the concepts you need for this module. </li><li><strong>Practice Quizzes. </strong>Each topic will include practice quizzes, intended for you to assess your understanding of the topics. You will be allowed unlimited attempts at each practice quiz. There is no time limit on how long you take to complete each attempt at the quiz. These quizzes do not contribute toward your final score in the class.  </li><li><strong>Discussion Prompts.</strong> Each topic includes discussion prompts. You will see the discussion prompt alongside other items in the lesson. Each prompt provides a space for you to respond. After responding, you can see and comment on your peers' responses. All prompts and responses are also accessible from the general discussion forum and the module discussion forum. </li></ul>
 <h2><span style="color: #3c3c3c; font-size: 1.45em"><strong>How to Pass This Course</strong></span></h2>
-
-
-<p>The module will contain a range of summative and formative assessments. Summative assessments are assessments which contribute directly towards your final grade. Formative assessments do not count directly towards your final grade. Instead, they provide you with opportunities for low stakes practice and will often provide some sort of feedback about your progress. For example, a practice quiz might provide you with feedback about why a particular answer was wrong.</p>
-
-<p class="align-center">The module has two assessments: a midterm assessment and a final exam. The midterm assessment comprises some written research work and some cryptography work. The exam comprises a quiz section and a written section. The midterm and exam each carry 50% of the grade.</p>
-
+<p>The module will contain a range of summative and formative assessments. Summative assessments are assessments which contribute directly towards your final grade. Formative assessments do not count directly towards your final grade. Instead, they provide you with opportunities for low stakes practice and will often provide some sort of feedback about your progress. For example, a practice quiz might provide you with feedback about why a particular answer was wrong.   </p>
+<p class="align-center">The module has two assessments: a midterm assessment and a final exam. The midterm assessment comprises some written research work and some cryptography work. The exam comprises a quiz section and a written section. The midterm and exam each carry 50% of the grade.    </p>
 <p><span style="color: #35383a">This is a detailed breakdown of all the marks:</span></p>
-
-<table border="1" cellpadding="10" cellspacing="0" style="border-collapse: collapse; width: 100%;">
-  <tr>
-    <th>Activity</th>
-    <th>Required?</th>
-    <th>Deadline week</th>
-    <th>Estimated time (Summative)</th>
-    <th>% of final grade</th>
-  </tr>
-  <tr>
-    <td>Written, staff graded coursework</td>
-    <td>Yes</td>
-    <td>Approximately Week 13</td>
-    <td>20 hours</td>
-    <td>50%</td>
-
-  </tr>
-  <tr>
-    <td>Written examination</td>
-    <td>Yes</td>
-    <td>Approximately Week 22</td>
-    <td>3-4 hours</td>
-    <td>50%</td>
-  </tr>
-</table>
-
+<table><tr><th><p><span style="color: #35383a"><strong>Activity </strong></span></p></th><th><p><span style="color: #35383a"><strong>Required? </strong></span><span style="color: #35383a"><strong>(Summative)</strong></span></p></th><th><p><span style="color: #35383a"><strong>Deadline week </strong></span></p></th><th><p><span style="color: #35383a"><strong>Estimated time </strong></span><span style="color: #35383a"><strong>per course</strong></span></p></th><th><p><span style="color: #35383a"><strong>% of </strong></span><span style="color: #35383a"><strong>final </strong></span><span style="color: #35383a"><strong>grade </strong></span></p></th></tr><tr><td><p>Written, staff graded coursework </p></td><td><p>Yes </p></td><td><p><span style="color: #35383a">Approximately </span>week 13 </p></td><td><p>20 hours  </p></td><td><p>50% </p></td></tr><tr><td><p>Written examination </p></td><td><p>Yes </p></td><td><p><span style="color: #35383a">Approximately </span>week 22 </p></td><td><p><span style="color: #35383a">3-4 hours </span></p></td><td><p>50% </p></td></tr></table>
 </article>
 </body>
 </html>
